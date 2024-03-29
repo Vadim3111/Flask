@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>
+        {% block title %}
+        {{login}}
+        {% endblock %}
+    </title>
+</head>
+<body>
+{% block content %}
+<div class="box">
+    <span class="borderLine"></span>
+    <form class="form_auth_style" action="#" method="post">
+        <h2>Sing in</h2>
+        <div class="inputBox">
+            <input type="text" name="name" required="required">
+            <i></i>
+            <span>Имя пользователя:</span>
+            <i></i>
+        </div>
+        <div class="inputBox">
+
+            <input type="email" name="email" required="required">
+            <i></i>
+            <span>Введите Ваш email:</span>
+            <i></i>
+        </div>
+        <div class="inputBox">
+
+        </div>
+        <input type="submit" name="submit" value="Отправить">
+    </form>
+</div>
+{% endblock %}
+</body>
+</html>

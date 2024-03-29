@@ -1,0 +1,15 @@
+{% extends 'login.html' %}
+
+{% block title %}
+{{title}}
+{% endblock %}
+
+{% block content %}
+<div class="inputBox">
+    <p>Привет, {{name}}! Вы залогинились с почтой {{email}}</p>
+    <form class="form_auth_style" action="#" method="post">
+        <button type="submit" name="back" value="back">Выйти</button>
+    </form>
+    <i></i>
+</div>
+{% endblock %}
