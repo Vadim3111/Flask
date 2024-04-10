@@ -1,0 +1,17 @@
+.colum__name {
+    color: brown;
+    font-weight: 300;
+    font-size: 200%;
+    text-alagin: center;
+    border: 2px solid grey
+}
+
+.table_style {
+    border_collapse: collapse; /* убирает пустоты*/
+    border: 2px solid grey; /*границы в 2 пикселя и серый цвет*/
+}
+
+.cell {
+    border: 1px solid grey; /* границы ячеек*/
+    font-size: 200%;
+}

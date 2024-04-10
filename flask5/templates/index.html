@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<table class="table_style">
+    <tr>
+        <td class="column__name">id</td>
+        <td class="column__name">name</td>
+        <td class="column__name">email</td>
+        <td class="column__name">password</td>
+    </tr>
+    {% for user in users %}
+    <tr>
+        <td class="cell">{{ user.id }}</td>
+        <td class="cell">{{ user.name }}</td>
+        <td class="cell">{{ user.email }}</td>
+        <td class="cell">{{ user.password }}</td>
+    </tr>
+    {%endfor%}
+</table>
+
+
+{% endblock %}
